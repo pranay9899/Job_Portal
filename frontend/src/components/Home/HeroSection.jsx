@@ -31,33 +31,22 @@ const HeroSection = () => {
   return (
     <>
       <div className="heroSection">
+        <h1 className="start">One Step Closer To Your Dream Job</h1>
         <div className="container">
+          
           <div className="title">
-            <h1>Find a job that suits</h1>
-            <h1>your interests and skills</h1>
+            <h2>Find a job that suits</h2>
+            <h2>your interests and skills</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              voluptate repellat modi quidem aliquid eaque ducimus ipsa et,
-              facere mollitia!
+            Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.
+
             </p>
           </div>
           <div className="image">
             <img src="/heroS.jpg" alt="hero" />
           </div>
         </div>
-        <div className="details">
-          {details.map((element) => {
-            return (
-              <div className="card" key={element.id}>
-                <div className="icon">{element.icon}</div>
-                <div className="content">
-                  <p>{element.title}</p>
-                  <p>{element.subTitle}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+       
       </div>
     </>
   );

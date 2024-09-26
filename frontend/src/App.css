@@ -96,7 +96,7 @@ p {
   font-size: 1.6rem;
 }
 .authPage .container .header img {
-  width: 300px;
+  width: 200px;
   height: 120px;
   margin: 0 auto;
 }
@@ -214,7 +214,7 @@ p {
   color: #f1f3f6;
 }
 .footerShow div a:hover {
-  color: #2d5649;
+  color:#12f06e;
   transform: scale(1.2);
   transition: all 0.3s;
 }
@@ -430,6 +430,12 @@ p {
   }
 }
 
+.start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(65, 161, 161);
+}
 .categories {
   min-width: 1500px;
   max-width: 1500px;
@@ -514,8 +520,10 @@ p {
 }
 .companies .container .banner {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  gap: 50px;
   width: 100%;
+  flex-wrap: wrap;
   padding: 20px 0;
 }
 .companies .container .banner .card {
@@ -639,11 +647,17 @@ p {
   text-decoration: none;
   padding: 7px;
   font-size: 20px;
-  color: #2d5649;
-  background: rgb(233, 249, 255);
+  color: #ff3434;
+  background: rgb(229, 242, 247);
   width: 100%;
   display: block;
+  border-radius: 10px;
   text-align: center;
+}
+
+.jobs .container .banner .card a:hover{
+ 
+  background-color: rgb(171, 230, 233);
 }
 @media (max-width: 1520px) {
   .jobs .container {
@@ -691,15 +705,21 @@ p {
   font-weight: 400;
 }
 .jobDetail .container .banner a {
-  background-color: #2d5649;
+  background-color: #4d7b44;
   color: rgb(233, 249, 255);
   font-size: 20px;
   font-weight: 400;
+  border-radius: 10px;
   border: none;
   padding: 12px 30px;
   text-decoration: none;
   margin-top: 10px;
   width: fit-content;
+}
+
+
+.jobDetail .container .banner a:hover {
+  background-color: #6b8c78;
 }
 @media (max-width: 1520px) {
   .jobDetail .container {
@@ -824,10 +844,16 @@ p {
   background: #d9534f;
   color: #fff;
   border: none;
+  border-radius: 10px;
   padding: 10px 30px;
   font-size: 20px;
   font-weight: 500;
 }
+
+.job_seeker_card .btn_area button:hover {
+    background-color:rgb(223, 143, 143);
+}
+
 @media (max-width: 1520px) {
   .my_applications .container {
     min-width: 100%;
@@ -1085,9 +1111,18 @@ p {
   border: none;
   background: #ffc107;
 }
+
+.myJobs .container .banner .card .button_wrapper .edit_btn:hover {
+    background-color: orange;
+}
+
 .myJobs .container .banner .card .button_wrapper .delete_btn {
   background: #d9534f;
   color: #f1f3f6;
+}
+
+.myJobs .container .banner .card .button_wrapper .delete_btn:hover {
+  background-color: rgb(206, 52, 52);
 }
 .myJobs .container .banner .card .button_wrapper .check_btn {
   background: transparent;
@@ -1160,7 +1195,7 @@ nav .container {
   justify-content: space-between;
 }
 nav .container .logo {
-  width: 120px;
+  width: 180px;
   height: 120px;
 }
 nav .container .logo img {
@@ -1175,19 +1210,19 @@ nav .menu {
 nav .menu button {
   height: fit-content;
   padding: 7px;
-  border: 1px solid #f1f3f6;
+  border: 1px solid #adfeff;
   color: #f1f3f6;
   background: transparent;
   font-size: 20px;
   font-weight: 300;
 }
 nav .menu button:hover {
-  color: #f1f3f6;
-  background: #184235;
+  color: black;
+  background: #bfe2e0;
   transition: all 0.3s;
   cursor: pointer;
   font-weight: 500;
-  border: 1px solid #184235;
+  border: 1px solid #ce2a2a;
 }
 nav .menu li a {
   color: #f1f3f6;
@@ -1197,7 +1232,7 @@ nav .menu li a {
   position: relative;
 }
 nav .menu li a:hover {
-  color: #2d5649;
+  color: #12f06e;
   transition: all 0.3s;
 }
 nav .menu li a::before {

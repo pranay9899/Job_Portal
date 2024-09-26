@@ -30,7 +30,8 @@ const Navbar = () => {
     <nav className={isAuthorized ? "navbarShow" : "navbarHide"}>
       <div className="container">
         <div className="logo">
-          <img src="/JobZee-logos__white.png" alt="logo" />
+          <img src="\Jobseek.png" alt="logo" />
+      
         </div>
         <ul className={!show ? "menu" : "show-menu menu"}>
           <li>
@@ -46,7 +47,7 @@ const Navbar = () => {
           <li>
             <Link to={"/applications/me"} onClick={() => setShow(false)}>
               {user && user.role === "Employer"
-                ? "APPLICANT'S APPLICATIONS"
+                ? "JOB SEEKER APPLICATIONS"
                 : "MY APPLICATIONS"}
             </Link>
           </li>
